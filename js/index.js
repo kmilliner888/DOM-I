@@ -201,3 +201,25 @@ console.log(footerClass)
 
 const footerCopyright = document.querySelector('.copyright')
 footerCopyright.textContent = "Copyright Great Idea! 2018"
+
+
+
+
+const navBar = document.querySelector('nav')
+navBar.classList.add('nav-bar')
+console.log(navBar)
+
+const newNavItem = document.createElement('a')
+console.log(newNavItem)
+const link = document.createTextNode("Testimonials")
+newNavItem.appendChild(link)
+newNavItem.href = "#"
+newNavItem.className = "nav-item-7"
+document.querySelector('.navBar')
+navBar.appendChild(newNavItem)
+
+const greenNavColors = document.querySelectorAll('nav a')
+
+greenNavColors.forEach( link => {
+  link.style.color = "green"
+})
