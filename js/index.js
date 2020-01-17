@@ -218,6 +218,14 @@ newNavItem.className = "nav-item-7"
 document.querySelector('.navBar')
 navBar.appendChild(newNavItem)
 
+const newNavItem2 = document.createElement('a')
+const link2 = document.createTextNode("Research")
+newNavItem2.appendChild(link2)
+newNavItem2.href="#"
+newNavItem2.className= "nav-item-8"
+document.querySelector('.navBar')
+navBar.prepend(newNavItem2)
+
 const greenNavColors = document.querySelectorAll('nav a')
 
 greenNavColors.forEach( link => {
